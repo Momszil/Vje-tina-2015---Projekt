@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="kratica" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^V:\\Vedran\\Documents\\Visual\ Studio\ 2015\\Projects\\C\#vj\\Vje-tina-2015---Projekt\\Generator\ Kratica\\Generator\ Kratica\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^V:\\Vedran\\Documents\\Visual\ Studio\ 2015\\Projects\\C\#vj\\Vje-tina-2015---Projekt\\Generator\ Kratica\\Generator\ Kratica\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

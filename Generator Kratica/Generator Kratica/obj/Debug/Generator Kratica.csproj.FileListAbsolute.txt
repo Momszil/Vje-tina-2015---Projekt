@@ -1,0 +1,53 @@
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\ApplicationInsights.config
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\csc.exe
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\Microsoft.CodeAnalysis.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\Microsoft.CSharp.Core.targets
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\Microsoft.VisualBasic.Core.targets
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\System.Collections.Immutable.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\System.Reflection.Metadata.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\vbc.exe
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\VBCSCompiler.exe
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\roslyn\VBCSCompiler.exe.config
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Generator Kratica.dll.config
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Generator Kratica.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Generator Kratica.pdb
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Antlr3.Runtime.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.AI.Agent.Intercept.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.AI.DependencyCollector.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.AI.PerfCounterCollector.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.AI.ServerTelemetryChannel.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.AI.Web.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.AI.WindowsServer.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.ApplicationInsights.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.Web.Infrastructure.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Newtonsoft.Json.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.Helpers.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.Mvc.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.Optimization.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.Razor.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.WebPages.Deployment.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.WebPages.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.WebPages.Razor.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\WebGrease.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.AI.DependencyCollector.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.AI.ServerTelemetryChannel.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.AI.Web.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.AI.WindowsServer.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.ApplicationInsights.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.Helpers.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.Mvc.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.Optimization.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.Razor.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.WebPages.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.WebPages.Deployment.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\System.Web.WebPages.Razor.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Antlr3.Runtime.pdb
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\bin\Newtonsoft.Json.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\obj\Debug\Generator Kratica.csprojResolveAssemblyReference.cache
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\obj\Debug\Generator Kratica.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\Vje-tina-2015---Projekt\Generator Kratica\Generator Kratica\obj\Debug\Generator Kratica.pdb
