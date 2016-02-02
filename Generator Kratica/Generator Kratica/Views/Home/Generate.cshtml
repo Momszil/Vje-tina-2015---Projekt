@@ -1,0 +1,22 @@
+﻿@model Generator_Kratica.Models.GenViewModel
+
+@{
+    ViewBag.Title = "Generator Kratica";
+}
+
+<div class="jumbotron">
+    @using (Html.BeginForm("GoBack", "Home"))
+    {
+        @Html.DisplayTextFor(model => model.request);
+        <input type="submit" value="Povratak" class="btn btn-primary btn-lg" />
+    }
+</div>
+
+<p>@Model.request</p>
+
+<br/>
+
+@foreach (var r in Model.results)
+{
+    <li>@r</li>
+}
