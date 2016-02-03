@@ -1,4 +1,5 @@
 # Vještina-2015---Projekt
+Projekt je upogonjen na Azure-u na adresi [http://kratica.azurewebsites.net/](http://kratica.azurewebsites.net/).
 
 ## UPDATE 3.2.2016.
 Projekt je preimenovan iz "Generator akronima" u "Generator kratica." Kao početna ideja projekta zamišljeno je da se barata s kraticama, pa se može reći da je riječ akronim korištena umjesto riječi kratica greška zbog nedovoljne količine poznavanja razlike između akronima i kratica. <br/>
