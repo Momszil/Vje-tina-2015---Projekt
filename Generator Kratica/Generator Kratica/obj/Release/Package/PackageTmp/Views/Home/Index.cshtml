@@ -1,33 +1,41 @@
-﻿@{
+﻿@model Generator_Kratica.Models.GenViewModel
+
+@{
     ViewBag.Title = "Generator Kratica";
 }
 
 <div class="jumbotron">
-    <form method="post">
-        <input type="text" name="request" placeholder="Dugačak naslov za skratiti" />
-        <p><input class="btn btn-primary btn-lg" type="submit" value="Generiraj" style="position: absolute; left: 50%;" /></p>
-    </form>
+
+    @using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "result" }))
+    {
+        @Html.EditorFor(x => x.request, new { htmlAttributes = new { @placeholder = "Dugačak naslov za skratiti" } })
+        <input class="btn btn-primary btn-lg" type="submit" value="Generiraj" />
+    }
 
     <!--
-    <h1>GENERATOR KRATICA</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-        -->
+    <form method="post">
+        <input type="text" name="request" placeholder="Dugačak naslov za skratiti" value="" />
+        <p><input class="btn btn-primary btn-lg" type="submit" value="Generiraj" /></p>
+        <!--pozicioniranje na sredinu stranice
+            style="position: absolute; left: 50%;"-- >
+    </form>-->
+
 </div>
 
 <div class="row">
     <div class="col-md-12">
-        rezultati bla bla bla bla bla bla bla rezultati bla bla bla bla bla bla bla
-        <br />
-        @{
-            if (IsPost)
-            {
-                string requestString = Request.Form["request"];
-                <text>
-                    imamo preceeeeee: @requestString;
-                </text>
+        <div id="result">
+            @{
+                if (false)
+                {
+                    string requestString = Request.Form["request"];
+                    <p></p>
+
+                    @Html.ActionLink("Generate", "Generate", "Home", new { request = requestString }, null)
+                }
             }
-        }
+
+        </div>
     </div>
 </div>
 
