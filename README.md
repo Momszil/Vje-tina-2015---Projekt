@@ -1,8 +1,8 @@
 # Vještina-2015---Projekt
 
 ## UPDATE 3.2.2016.
-Projekt je preimenovan iz "Generator akronima" u "Generator kratica." Kao početna ideja projekta zamišljeno je da se barata s kraticama, pa se može reći da je riječ akronim korištena umjesto riječi kratica greška zbog nedovoljne količine poznavanja razlike između akronima i kratica. 
-Iako se u nazivu primjer generatora za engleski jezik istaknutom u zadnjem odlomku ovoga plana u nazivu spominju akronimi, on unatoč tome u svojoj suštini barata sa kraticama, ne akronimima. 
+Projekt je preimenovan iz "Generator akronima" u "Generator kratica." Kao početna ideja projekta zamišljeno je da se barata s kraticama, pa se može reći da je riječ akronim korištena umjesto riječi kratica greška zbog nedovoljne količine poznavanja razlike između akronima i kratica. <br/>
+Iako se u nazivu primjera generatora za engleski jezik istaknutom u zadnjem odlomku ovoga plana u nazivu spominju akronimi, on unatoč tome u svojoj suštini barata sa kraticama, ne akronimima. 
 
 ## Generator kratica - plan projekta
 
