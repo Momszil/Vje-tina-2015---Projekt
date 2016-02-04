@@ -22,18 +22,7 @@ namespace Generator_Kratica.Controllers
         public ActionResult Index(GenViewModel model)
         {
             fillTrie();
-            model.results = new List<string>();
-            model.results.Add("PERO".ToLower());
-            model.results.Add("vedran");
-            trie.Matcher.ResetMatcher();
-            trie.Matcher.StepForward('v');
-            trie.Matcher.StepForward('e');
-            trie.Matcher.StepForward('d');
-            trie.Matcher.StepForward('r');
-            trie.Matcher.StepForward('a');
-            trie.Matcher.StepForward('n');
-            model.results.Add(trie.Matcher.isMatchWord().ToString());
-            model.results.Add(trie.Matcher.GetCurrentMatch());
+            fillResults(model);
             //TODO NATRPAVANJE REZULTATA
             return PartialView("Generate", model);
         }
@@ -58,6 +47,76 @@ namespace Generator_Kratica.Controllers
             }
         }
 
+        // ** Ako je u igri više od 3 riječi,
+        //    Onda ćemo maksimalno uzeti po 2 slova od svake riječi
+        // ** Ako je u igri manje od 4 riječi,
+        //    Onda ćemo moći uzeti po maksimalno 3 slova od svake riječi
+        // ** Riječi koje imaju 3 ili manje slova bi mogli i preskočiti
+        // ** Svaka ostala riječ ćemo uzet da mora bar 1 slovo uzet
+        private void fillResults(GenViewModel model)
+        {
+            trie.Matcher.ResetMatcher();
+            model.results = new List<string>();
+            string[] words = model.request.ToLower().Split(null);
+            if (true) // words.Length > 3
+            {
+                int state = 0;
+                int brojRijeci = words.Length;
+                int[] diSamStao = new int[brojRijeci];
+                for (int i = 0; i < brojRijeci; i++)
+                {
+                    diSamStao[i] = 0;
+                }
+                bool prolaz = true;
+                while (prolaz)
+                {
+                    switch (state)
+                    {
+                        // 0 nismo došli do zadnje riječi, od svake riječi uzimamo po prvo slovo
+                        case 0:
+
+                            for (int i = 0; i < brojRijeci; i++)
+                            {
+                                if (i == brojRijeci - 1)
+                                {
+                                    state = 1;
+                                }
+                                else
+                                {
+                                    state = 0;
+                                }
+                                char c = Char.Parse(words[i].Substring(0, 1));
+                                trie.Matcher.StepForward(c);
+                            }
+                            break;
+                        // 1 počinjemo sa zadnjom riječi
+                        case 1:
+                            if (trie.Matcher.isMatchWord())
+                            {
+                                model.results.Add(trie.Matcher.GetCurrentMatch());
+                            }
+                            prolaz = false;
+                            break;
+                    }
+                }
+                
+            }
+            /*
+            trie.Matcher.ResetMatcher();
+
+            model.results.Add("vedran");
+            trie.Matcher.ResetMatcher();
+            trie.Matcher.StepForward('v');
+            trie.Matcher.StepForward('e');
+            trie.Matcher.StepForward('d');
+            trie.Matcher.StepForward('r');
+            trie.Matcher.StepForward('a');
+            trie.Matcher.StepForward('n');
+            model.results.Add(trie.Matcher.isMatchWord().ToString());
+            model.results.Add(trie.Matcher.GetCurrentMatch());
+            */
+        }
+        // KOJU KARIRANU KOŠULJU DANAS OBUĆI (kakao)
         /*
         public ActionResult About()
         {

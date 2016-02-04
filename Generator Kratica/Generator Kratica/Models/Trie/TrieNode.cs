@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace Generator_Kratica.Models.Trie
 {
-    // KOJU KARIRANU KOŠULJU DANAS OBUĆI (kakao)
-
     /// <summary>
     /// ČVOR, djeca su slova, ako je neko slovo nekog ČVORA zadnje slovo neke riječi, W nije null.
     /// </summary>
