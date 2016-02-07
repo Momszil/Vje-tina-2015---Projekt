@@ -14,6 +14,7 @@ namespace Generator_Kratica.Controllers
         private Trie<string> trie = new Trie<string>();
         private List<string> rezultati = new List<string>();
         private string[] words;
+        private string resuletters = "";
 
         public ActionResult Index()
         {
@@ -71,7 +72,10 @@ namespace Generator_Kratica.Controllers
                         {
                             if (!model.results.Contains(trie.Matcher.GetCurrentMatch()))
                             {
-                                model.results.Add(trie.Matcher.GetCurrentMatch());
+                                resuletters += trie.Matcher.GetCurrentMatch() + "\t-\t-\t-\t";
+                                findLettersinResult();
+                                model.results.Add(resuletters);
+                                resuletters = "";
                             }  
                         }
                         trie.Matcher.StepBack();
@@ -93,6 +97,30 @@ namespace Generator_Kratica.Controllers
                         continue;
                     }
                 }
+            }
+        }
+
+        private void findLettersinResult()
+        {
+            int x = 0;
+            bool isitUp = false;
+            foreach (char c in trie.Matcher.GetCurrentMatch())
+            {
+                foreach (char d in words[x])
+                {
+                    if (c.Equals(d) && isitUp == false)
+                    {
+                        resuletters += Char.ToUpper(d);
+                        isitUp = true;
+                    }
+                    else
+                    {
+                        resuletters += d;
+                    }
+                }
+                x++;
+                isitUp = false;
+                resuletters += " ";
             }
         }
 
