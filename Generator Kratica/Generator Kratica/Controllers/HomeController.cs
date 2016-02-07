@@ -12,6 +12,8 @@ namespace Generator_Kratica.Controllers
     public class HomeController : Controller
     {
         private Trie<string> trie = new Trie<string>();
+        private List<string> rezultati = new List<string>();
+        private string[] words;
 
         public ActionResult Index()
         {
@@ -22,8 +24,7 @@ namespace Generator_Kratica.Controllers
         public ActionResult Index(GenViewModel model)
         {
             fillTrie();
-            fillResults(model);
-            //TODO NATRPAVANJE REZULTATA
+            fillResultsNew(model);
             return PartialView("Generate", model);
         }
 
@@ -40,13 +41,62 @@ namespace Generator_Kratica.Controllers
                 while (sr.Peek() >= 0)
                 {
                     string line = sr.ReadLine();
-                    string[] words = line.Split();
+                    words = line.Split();
                     string word = words[0].ToLower();
                     trie.Put(word, word);
                 }
             }
         }
+    
+        // NOVI ALGORITAM KOJI SE KORISTI
+        // ** Od svake riječi uzimamo po 1 slovo
+        private void fillResultsNew(GenViewModel model)
+        {
+            trie.Matcher.ResetMatcher();
+            model.results = new List<string>();
+            words = model.request.ToLower().Split(null);
+            fillResultsRecursion(0, words.Length - 1, model);
+        }
 
+        private void fillResultsRecursion(int current, int last, GenViewModel model)
+        {
+
+            if (current == last)
+            {
+                foreach (char d in words[current])
+                {
+                    if (trie.Matcher.StepForward(d))
+                    {
+                        if (trie.Matcher.isMatchWord())
+                        {
+                            if (!model.results.Contains(trie.Matcher.GetCurrentMatch()))
+                            {
+                                model.results.Add(trie.Matcher.GetCurrentMatch());
+                            }  
+                        }
+                        trie.Matcher.StepBack();
+                    }
+                }
+            }
+            else
+            {
+                foreach (char c in words[current])
+                {
+                    if (trie.Matcher.StepForward(c))
+                    {
+                        fillResultsRecursion(current + 1, last, model);
+
+                        trie.Matcher.StepBack();
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+            }
+        }
+
+        // STARI POKUŠAJ ALGORITMA ČIJA IDEJA JE ODBAČENA
         // ** Ako je u igri više od 3 riječi,
         //    Onda ćemo maksimalno uzeti po 2 slova od svake riječi
         // ** Ako je u igri manje od 4 riječi,
@@ -89,17 +139,31 @@ namespace Generator_Kratica.Controllers
                                 trie.Matcher.StepForward(c);
                             }
                             break;
-                        // 1 počinjemo sa zadnjom riječi
+                        // 1 permutacije
                         case 1:
                             if (trie.Matcher.isMatchWord())
                             {
                                 model.results.Add(trie.Matcher.GetCurrentMatch());
                             }
+                            diSamStao[brojRijeci - 1]++;
+                            for (int i = diSamStao[brojRijeci - 1]; i < words[brojRijeci - 1].Length; i++)
+                            {
+                                if (diSamStao[brojRijeci - 1] == words[brojRijeci - 1].Length)
+                                {
+                                    state = 2;
+                                }
+                                trie.Matcher.StepBack();
+                                char c = Char.Parse(words[brojRijeci - 1].Substring(diSamStao[brojRijeci - 1], 1));
+                                trie.Matcher.StepForward(c);
+                                state = 2;
+                            }
+                            break;
+                        case 2:
                             prolaz = false;
                             break;
                     }
                 }
-                
+
             }
             /*
             trie.Matcher.ResetMatcher();
