@@ -158,7 +158,6 @@
     <Compile Include="Models\Trie\Trie.cs" />
     <Compile Include="Models\Trie\TrieMatcher.cs" />
     <Compile Include="Models\Trie\TrieNode.cs" />
-    <Compile Include="Models\Words.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

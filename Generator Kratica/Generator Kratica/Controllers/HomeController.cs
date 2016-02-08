@@ -14,7 +14,6 @@ namespace Generator_Kratica.Controllers
         private Trie<string> trie = new Trie<string>();
         private List<string> rezultati = new List<string>();
         private string[] words;
-        private string resuletters = "";
 
         public ActionResult Index()
         {
@@ -55,6 +54,7 @@ namespace Generator_Kratica.Controllers
         {
             trie.Matcher.ResetMatcher();
             model.results = new List<string>();
+            model.resultDescription = new List<string>();
             words = model.request.ToLower().Split(null);
             fillResultsRecursion(0, words.Length - 1, model);
         }
@@ -72,10 +72,8 @@ namespace Generator_Kratica.Controllers
                         {
                             if (!model.results.Contains(trie.Matcher.GetCurrentMatch()))
                             {
-                                resuletters += trie.Matcher.GetCurrentMatch() + "\t-\t-\t-\t";
-                                findLettersinResult();
-                                model.results.Add(resuletters);
-                                resuletters = "";
+                                model.results.Add(trie.Matcher.GetCurrentMatch());
+                                model.resultDescription.Add(findLettersinResult());
                             }  
                         }
                         trie.Matcher.StepBack();
@@ -100,10 +98,11 @@ namespace Generator_Kratica.Controllers
             }
         }
 
-        private void findLettersinResult()
+        private string findLettersinResult()
         {
             int x = 0;
             bool isitUp = false;
+            string resuletters = "";
             foreach (char c in trie.Matcher.GetCurrentMatch())
             {
                 foreach (char d in words[x])
@@ -122,6 +121,7 @@ namespace Generator_Kratica.Controllers
                 isitUp = false;
                 resuletters += " ";
             }
+            return resuletters;
         }
 
         // STARI POKUŠAJ ALGORITMA ČIJA IDEJA JE ODBAČENA

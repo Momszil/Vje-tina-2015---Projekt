@@ -1,6 +1,7 @@
 ﻿@model Generator_Kratica.Models.GenViewModel
 
 @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Generator Kratica";
 }
 
@@ -12,9 +13,18 @@
     }
 </div>
 
-<br/>
+<br />
 
-@foreach (var r in Model.results)
-{
-    <li>@r</li>
-}
+<table border="0" cellpadding="10">
+    @for (int i = 0; i < Model.results.Count; i++)
+    {
+        <tr>
+            <td>
+                @Model.results[i]
+            </td>
+            <td>
+                @Model.resultDescription[i]
+            </td>
+        </tr>
+    }
+</table>

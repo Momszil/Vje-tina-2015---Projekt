@@ -11,5 +11,7 @@ namespace Generator_Kratica.Models
         public string request { get; set; }
 
         public List<string> results { get; set; }
+
+        public List<string> resultDescription { get; set; }
     }
 }
